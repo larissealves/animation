@@ -6,17 +6,40 @@
     <title>Animation</title>
     <link rel="icon" href="images/capybara/img_01.jpg" type="image/jpg">
 
-
     <!-- Main stylesheet (includes base, rotation, and drag-drop styles) -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <!--===================================
+     START Section: menu 
+    ===================================-->
+    <script src="js/change-menu.js" defer></script>
+    <div id="content-menu" class="content-menu">
+    <a id="btn-toggle-menu" class="btn-toggle-menu"> clique here for change menu </a>
+    <button id="btn-toggle-menu--sanduiche" class="menu-sanduiche display-none"> 2teste</button>
+    <nav id="menu" class="menu-horizontal">
+        <ul>
+            <li><a href='#'>capybara 01</a></li>
+            <li><a href='#'>capybara 02</a></li>
+            <li><a href='#'>capybara 03</a></li>
+            <li><a href='#'>capybara 04</a></li>
+            <li><a href='#'>capybara 05</a></li>
+            <li><a id="link-toggle-menu" href='#'>change menu</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!--===================================
+     END Section: menu 
+    ===================================-->
+
+    <!--===================================
+     START Section: Drag and Drop 
+    ===================================-->
 
     <!-- JavaScript file for drag-and-drop functionality -->
     <script src="js/drag-and-drop.js" defer></script>
-
-    <!-- Section: Drag and Drop -->
+    
     <section class="animation-drag-drop">
         <h1>Drag and Drop</h1>
 
@@ -38,8 +61,13 @@
             <img class="item" draggable="true" style="--position: 8" src="images/capybara/img_08.jpeg">
         </div>
     </section>
+    <!--===================================
+     END Section: Drag and Drop 
+    ===================================-->
 
-    <!-- Section: 3D Rotating Carousel -->
+    <!--===================================
+    START Section: 3D Rotating Carousel 
+    ===================================-->
     <section class="animation-rotation">
        <!--  <h1>Capybara</h1> -->
 
@@ -58,6 +86,9 @@
             </div>
         </div>
     </section>
+    <!--===================================
+    END Section: 3D Rotating Carousel 
+    ===================================-->
 
 </body>
 </html>

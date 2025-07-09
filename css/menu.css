@@ -1,0 +1,48 @@
+.content-menu {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--secondary-color);
+}
+
+.content-menu.position-absolute {
+    flex-direction: column;
+    z-index: 40;
+}
+
+li:hover {
+    background-color: var(--background-color);
+    height: 100%;
+}
+
+/* Menu horizontal padrão */
+.menu-horizontal ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-horizontal li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Menu vertical estilo "sanduíche" */
+.menu-vertical ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.menu-vertical.deactive {
+    display: none;
+}
+
+.menu-vertical li a {
+  color: white;
+}

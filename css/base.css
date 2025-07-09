@@ -1,7 +1,21 @@
+:root {
+    --background-color: #fef6e4;
+    --primary-color: #4b3f2f;
+    --secondary-color: bisque;
+}
+
 body {
     margin: 0;
     background: #fef6e4;
     font-family: 'Poppins', sans-serif;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.position-absolute {
+    position: absolute;
 }
 
 h1 {
