@@ -1,48 +1,102 @@
 .content-menu {
-    padding: 16px 0;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background-color: var(--secondary-color);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: -webkit-fill-available;
+  z-index: 40;
 }
 
-.content-menu.position-absolute {
-    flex-direction: column;
-    z-index: 40;
+.content-menu :first-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-li:hover {
-    background-color: var(--background-color);
-    height: 100%;
+.content-menu.position-absolute div  {
+  flex-direction: column;
+  gap: 0;
+  z-index: 40;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-/* Menu horizontal padrão */
+.content-menu .icon-github {
+  width: 40px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+}
+
+nav li:hover {
+  background-color: var(--background-color);
+  border-radius: 6px;
+}
+
+/* === Menu horizontal === */
 .menu-horizontal ul {
   display: flex;
   gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .menu-horizontal li a {
   text-decoration: none;
   color: var(--primary-color);
+  font-size: 16px;
 }
 
-/* Menu vertical estilo "sanduíche" */
+/* === Menu vertical estilo "sanduíche" === */
 .menu-vertical ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
   background-color: var(--secondary-color);
   padding: 1rem;
-}
-
-.menu-vertical.deactive {
-    display: none;
+  border-radius: 8px;
 }
 
 .menu-vertical li a {
-  color: white;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.menu-vertical.deactive {
+  display: none;
+}
+
+/* === Botões do menu === */
+#btn-toggle-menu,
+#btn-toggle-menu--sanduiche {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#btn-toggle-menu img {
+  width: 32px;
+  height: 32px;
+}
+
+.menu-sanduiche {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 16px;
+  border: none;
 }
