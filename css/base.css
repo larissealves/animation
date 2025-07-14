@@ -32,3 +32,15 @@ h1 {
 section {
     padding: 24px;
 }
+
+.primary-button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

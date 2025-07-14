@@ -1,0 +1,17 @@
+.heart {
+  position: absolute;
+  animation: floatUp 2s ease-out forwards;
+  pointer-events: none;
+  color: #ff1493;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-150px) scale(1.5);
+  }
+}
