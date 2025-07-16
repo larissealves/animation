@@ -17,29 +17,28 @@
     <script src="js/change-menu.js" defer></script>
 
     <div id="content-menu" class="content-menu">
-    <div>
-    <button id="btn-toggle-menu--sanduiche" class="menu-sanduiche display-none" title="MENU"> </button>
-    
-    <a id="btn-toggle-menu" class="btn-toggle-menu" 
-        title="CLICK HERE TO CHANGE THE MENU TYPE">
-        <img src='images/icon-change-menu.png'>
-    </a>
+        <div>
+            <button id="btn-toggle-menu--sanduiche" class="menu-sanduiche display-none" title="MENU"> </button>
 
-     <nav id="menu" class="menu-horizontal">
-        <ul>
-            <li><a href='#'>capybara 01</a></li>
-            <li><a href='#'>capybara 02</a></li>
-            <li><a href='#'>capybara 03</a></li>
-            <li><a href='#'>capybara 04</a></li>
-            <li><a href='#'>capybara 05</a></li>
-            <li><a href='#'>capybara 06</a></li>
-        </ul>
-    </nav>
-    </div>
-    <a href="https://github.com/larissealves/" target="_blank" title="Click to go to GitHub"> 
-        <img src="images/icon-github.png" class="icon-github">
-    </a>
-    
+            <a id="btn-toggle-menu" class="btn-toggle-menu" title="CLICK HERE TO CHANGE THE MENU TYPE">
+                <img src='images/icon-change-menu.png'>
+            </a>
+
+            <nav id="menu" class="menu-horizontal">
+                <ul>
+                    <li><a href='#'>capybara 01</a></li>
+                    <li><a href='#'>capybara 02</a></li>
+                    <li><a href='#'>capybara 03</a></li>
+                    <li><a href='#'>capybara 04</a></li>
+                    <li><a href='#'>capybara 05</a></li>
+                    <li><a href='#'>capybara 06</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="https://github.com/larissealves/" target="_blank" title="Click to go to GitHub">
+            <img src="images/icon-github.png" class="icon-github">
+        </a>
+
     </div>
     <!--===================================
      END Section: menu 
@@ -51,7 +50,7 @@
 
     <!-- JavaScript file for drag-and-drop functionality -->
     <script src="js/drag-and-drop.js" defer></script>
-    
+
     <section class="animation-drag-drop">
         <h1>Drag and Drop</h1>
 
@@ -81,7 +80,7 @@
     START Section: 3D Rotating Carousel 
     ===================================-->
     <section class="animation-rotation">
-       <!--  <h1>Capybara</h1> -->
+        <!--  <h1>Capybara</h1> -->
 
         <!-- 3D scene container with perspective -->
         <div class="scene">
@@ -103,17 +102,37 @@
     ===================================-->
 
     <!--===================================
-    START Section: 
+    START Section: heart, stars
     ===================================-->
     <script src="js/releaseHearts.js" defer></script>
-    
+  
     <section class="animation-drag-drop">
-       <button class="primary-button" onclick="releaseHeart()"> 💖 click here!</button>
-        
+        <button class="primary-button" onclick="releaseHeart()"> 💖 click here!</button>
+
+        <div class="rate">
+            <div>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text"></label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text"></label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text"></label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text"></label>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text"></label>
+            </div>
+            <div>
+                <a href="https://codepen.io/hesguru/pen/BaybqXv" target="_blank">CodePen Home
+                    5 star rating with css and html</a>
+            </div>
+        </div>
+
     </section>
     <!--===================================
     END Section:  
     ===================================-->
 
 </body>
+
 </html>
